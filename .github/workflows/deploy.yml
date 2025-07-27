@@ -3,25 +3,30 @@ name: Deploy Indam's site to GitHub Pages
 on:
   push:
     branches:
-      - main  # change if your Hugo source is on another branch
+      - main
+
+permissions:
+  contents: write  # ⬅️ required to push to gh-pages
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: true  # ⬅️ important if your theme is a Git submodule
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
 
-      - name: Build
+      - name: Build Hugo site
         run: hugo --minify
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
