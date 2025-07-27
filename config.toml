@@ -15,3 +15,8 @@ instagram = "indam_"
 linkedin = "indam"
 twitter = "indam_"
 email = "indam.muhammad@gmail.com"
+
+[params.extra]
+copyright = "Powered By Hugo"
+displayrssicon = true
+poweredby = false
