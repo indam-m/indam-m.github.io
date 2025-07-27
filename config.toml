@@ -1,0 +1,17 @@
+baseURL = "https://indam-m.github.io/"
+languageCode = 'en-us'
+title = "Indam's Site"
+theme = 'goa'
+
+[params]
+author = "Indam M. Hery"
+intro = "Software Engineer | Fullstack | Backend & Frontend"
+description = "Currently @PasarPolis Indonesia | Traveling and learning languages (currently Dutch and Japanese) are my thing!"
+authorimage = "avatar.png"
+
+[params.social]
+github = "indam-m"
+instagram = "indam_"
+linkedin = "indam"
+twitter = "indam_"
+email = "indam.muhammad@gmail.com"
