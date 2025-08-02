@@ -20,3 +20,8 @@ email = "indam.muhammad@gmail.com"
 copyright = "Powered By Hugo"
 displayrssicon = true
 poweredby = false
+
+[[menu.main]]
+    name = "projects"
+    weight = 300
+    url = "projects/"
