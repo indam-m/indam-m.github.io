@@ -15,6 +15,7 @@ instagram = "indam_"
 linkedin = "indam"
 twitter = "indam_"
 email = "indam.muhammad@gmail.com"
+duolingo = "damincorner"
 
 [params.extra]
 copyright = "Powered By Hugo"
